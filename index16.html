@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: red;
+    }
+    .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        animation-name: identifier;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes identifier {
+        from {
+
+        }
+        to {
+            transform: translateX(10vh) translateY(10vw);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

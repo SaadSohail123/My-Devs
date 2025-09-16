@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* [data-color=primary] {
+            background-color: blue;
+        } */
+        .box *{
+background-color:red;
+margin: 10px;
+padding: 10px;
+        }
+        div.box::after{
+            content: "Hi I am Saad"
+        }
+    </style>
+    <div class="box">
+  <div  data-color="primary"  class="box1">I am a box</div>
+  <div class="box2">I am a box</div>
+  <div class="box3">I am a box</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Firstbox {
+            border: 5px solid black;
+            background-color: chartreuse;
+        }
+        .Firstbox1 {
+            border: 5px solid black;
+            background-color: purple;
+        }
+        body {
+            background-color: red;
+        }
+        @media screen and (max-width: 300px) {
+         .Firstbox1 {
+            border: 5px solid black;
+            background-color: brown;
+         }
+        }
+            @media screen and (max-width: 300px) {
+                .Firstbox {
+                    background-color: green;
+                    border: 5px solid black;
+                }
+                
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="Firstbox1">
+        I am Media
+    </div>
+    <div class="Firstbox">I am box</div>
+</body>
+</html> 
