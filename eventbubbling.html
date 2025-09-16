@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            margin: 14px;
+            padding: 14px;
+            background-color: red;
+        }
+
+        .childcontainer {
+            margin: 14px;
+            padding: 14px;
+            background-color: yellow;
+        }
+
+        .parentcontainer {
+            margin: 14px;
+            padding: 14px;
+            background-color: orange;
+        }
+    </style>
+    <div class="parentcontainer">
+        <div class="childcontainer">
+            <div class="container">
+                Hi I am container
+            </div>
+        </div>
+    </div>
+    <script>
+        let box = document.getElementsByClassName("boxes")
+        function getRandomColor() {
+            let val1 = Math.ceil(Math.random() * 255)
+            let val2 = Math.ceil(Math.random() * 255)
+            let val3 = Math.ceil(Math.random() * 255)
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        Array.from(box).forEach(e => {
+            e.style.backgroundColor = getRandomColor()
+            e.style.color = getRandomColor()
+        })
+        // document.querySelector(".container").addEventListener("click", (e) =>{
+        //     e.stopPropagation()
+        //     alert ("Container was clicked")
+        // })
+        // document.querySelector(".childcontainer").addEventListener("click", (e) =>{
+        //     e.stopPropagation()
+        //     alert ("Child container was clicked")
+        // })
+        // document.querySelector(".parentcontainer").addEventListener("click", (e) =>{
+        //     alert ("Parent container was clicked")
+        // })
+        setInterval(() => {
+            document.querySelector(".container").style.background = getRandomColor()
+        }, 1000);
+        setInterval(() => {
+            document.querySelector(".childcontainer").style.background = getRandomColor()
+        }, 1000);
+        setInterval(() => {
+            document.querySelector(".parentcontainer").style.background = getRandomColor()
+        }, 1000);
+    </script>
+</body>
+
+</html>
