@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(Assets/Images/Background\ Image.jpg);
+    height: 95vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /* overflow: hidden; */
+}
+
+.bg {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+    max-width: 150vh;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    font-family: 'Netflix Sans';
+    max-width: 800px;
+    max-height: 900px;
+    margin: auto;
+    font-size: 56px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 70px;
+    top: 120px;
+    letter-spacing: 0px;
+    padding: 30px;
+}
+
+.frog {
+    font-family: 'Netflix Sans';
+    max-width: 800px;
+    max-height: 900px;
+    margin: auto;
+    font-size: 56px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    text-align: center;
+}
+
+.text1 {
+    font-family: 'Netflix Sans';
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    line-height: 60px;
+    top: 120px;
+    text-align: center;
+}
+
+.ready {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    line-height: 24px;
+    top: 130px;
+    text-align: center;
+}
+
+.searchbox {
+    width: 500px;
+    height: 50px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    line-height: 24px;
+    top: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    gap: 10px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    line-height: 24px;
+    color: white;
+    padding-left: 20px;
+    flex-shrink: 0;
+}
+
+.getstarted {
+    width: 200px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    background-color: red;
+    flex-shrink: 0;
+    gap: 10px;
+    text-align: center;
+}
+.getstarted:hover{
+    cursor: pointer;
+    color: blue;
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 11px;
+    background-color: gray;
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    margin-top: 270px;
+}
+
+.belowcontainer {
+    font-weight: 500;
+    font-family: 'Netflix Sans';
+    font-size: 24px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.new {
+    height: 500vh;
+    width: 100%;
+    background-color: black;
+}
+
+.belowcontainer {
+    width: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    justify-content: start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.Squid-Game {
+    border-radius: 10px;
+
+}
+
+.Raid_2 {
+    border-radius: 10px;
+}
+
+.The_Great_Indian_Kapil_Show {
+    border-radius: 10px;
+}
+
+.The_Old_Guard_2 {
+    border-radius: 10px;
+}
+
+.The_Sanoman {
+    border-radius: 10px;
+}
+
+.container2 {
+    width: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Netflix Sans';
+    font-weight: 500;
+    justify-content: start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.reasons {
+    background-color: #7EAAED;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.king {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.textenjoy {
+    font-family: 'Netflix Sans';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.textwatch {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.svg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: 220px;
+}
+
+.svg1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 220px;
+}
+
+.download {
+    font-family: 'Netflix Sans';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.save {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.watch {
+    font-family: 'Netflix Sans';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.stream {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.svg2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 220px;
+}
+
+.svg3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: 220px;
+}
+
+.create {
+    font-family: 'Netflix Sans';
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.kids {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.container3 {
+    width: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    justify-content: start;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.king1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.question1 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 10px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.question2 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 50px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.question3 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 50px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.question4 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 50px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.question5 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 50px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.question6 {
+    font-family: 'Netflix Sans';
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2d2d2d;
+    height: 100px;
+    width: 90%;
+    margin-top: 50px;
+    margin: 0px 80px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.container4 {
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding-left: 500px;
+    gap: 10px;
+}
+
+.input1 {
+    width: 700px;
+    height: 60px;
+    border: 1px solid white;
+}
+
+.questions {
+    width: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    justify-content: start;
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+
+.highlighted {
+    color: white;
+    display: block;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    color: white;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    text-align: center;
+    max-width: 1000px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    font-weight: 10;
+    line-height: 21px;
+}
+
+.box {
+    padding-left: 150px;
+}
+
+#select {
+    color: white;
+    background-color: black;
+    font-family: 'Segoe UI';
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 100px;
+    width: 125px;
+    height: 40px;
+}
+
+.image {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-left: 220px;
+}
+
+.end {
+    display: block;
+    color: white;
+    margin-top: 50px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+
+    .text,
+    .frog {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 20px;
+    }
+
+    .text1 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .searchbox,
+    .searchbox1 {
+        flex-direction: column;
+        width: 90%;
+        padding-left: 0;
+        top: auto;
+    }
+
+    input,
+    .input1,
+    .getstarted {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .movies {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .reasons {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .king {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .question1,
+    .question2,
+    .question3,
+    .question4,
+    .question5,
+    .question6 {
+        margin: 10px;
+        width: auto;
+        font-size: 18px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container3,
+    .container4,
+    .questions {
+        padding: 20px;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .text,
+    .frog {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .text1 {
+        font-size: 16px;
+    }
+
+    .getstarted {
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .svg,
+    .svg1,
+    .svg2,
+    .svg3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #select {
+        margin: 20px auto;
+    }
+
+    .end {
+        text-align: center;
+        padding: 20px;
+    }
+}
