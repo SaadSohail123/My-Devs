@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Card {
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 50px auto;
+            padding: 20px;  /* this creates space between border and image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .CardImage {
+            width: 200px;  /* control width */
+            height: 100px; /* control height */
+            object-fit: contain;  /* make sure full image fits inside box */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Card">
+        <img src="pexels-photo-247600.jpeg" class="CardImage">
+    </div>
+
+</body>
+</html>
